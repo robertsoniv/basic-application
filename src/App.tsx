@@ -44,10 +44,6 @@ function App() {
           <Text fontWeight="normal" fontSize="sm">© Sitcore Inc. 2024</Text>
         </GridItem>
       </Grid>
-      {/* <TopNav />
-      <Profile />
-      <AuthToggle />
-      <Orders direction="Incoming" /> */}
       <GlobalLoadingIndicator/>
     </OrderCloudProvider>
   );

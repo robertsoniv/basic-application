@@ -26,7 +26,6 @@ const useOrders = (
   direction: OrderDirection,
   listOptions?: OrderListOptions
 ) => {
-  console.log('hit');
   return useAuthQuery({
     queryKey: ["orders", direction, listOptions],
     queryFn: async () => {
