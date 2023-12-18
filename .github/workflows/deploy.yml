@@ -52,11 +52,11 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         env:
-          VITE_APP_CONFIG_BASE: ${{ vars.VITE_APP_CONFIG_BASE }}
-          VITE_APP_ORDERCLOUD_BASE_API_URL: ${{ vars.VITE_APP_ORDERCLOUD_BASE_API_URL }}
-          VITE_APP_ORDERCLOUD_CLIENT_ID: ${{ vars.VITE_APP_ORDERCLOUD_CLIENT_ID }}
-          VITE_APP_ORDERCLOUD_SCOPE: ${{ vars.VITE_APP_ORDERCLOUD_SCOPE }}
-          VITE_APP_ORDERCLOUD_ALLOW_ANONYMOUS: ${{ vars.VITE_APP_ALLOW_ANONYMOUS }}
+          VITE_APP_CONFIG_BASE: ${{ secrets.VITE_APP_CONFIG_BASE }}
+          VITE_APP_ORDERCLOUD_BASE_API_URL: ${{ secrets.VITE_APP_ORDERCLOUD_BASE_API_URL }}
+          VITE_APP_ORDERCLOUD_CLIENT_ID: ${{ secrets.VITE_APP_ORDERCLOUD_CLIENT_ID }}
+          VITE_APP_ORDERCLOUD_SCOPE: ${{ secrets.VITE_APP_ORDERCLOUD_SCOPE }}
+          VITE_APP_ORDERCLOUD_ALLOW_ANONYMOUS: ${{ secrets.VITE_APP_ALLOW_ANONYMOUS }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
