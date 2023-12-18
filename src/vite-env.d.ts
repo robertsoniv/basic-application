@@ -6,7 +6,7 @@ interface ImportMetaEnv {
   readonly VITE_APP_ORDERCLOUD_CLIENT_ID: string;
   readonly VITE_APP_ORDERCLOUD_SCOPE: string;
   readonly VITE_APP_ORDERCLOUD_SCOPE?: string;
-  readonly VITE_APP_ORDERCLOUD_ALLOW_ANONYMOUS?: string;
+  readonly VITE_APP_ORDERCLOUD_ALLOW_ANONYMOUS?: boolean;
   // more env variables...
 }
 

@@ -11,7 +11,7 @@ const SCOPE:ApiRole[] = SCOPE_STRING.split(',') as ApiRole[];
 const CUSTOM_SCOPE:string[] = CUSTOM_SCOPE_STRING?.split(',') || [];
 
 //Anonymous auth configuration
-const ALLOW_ANONYMOUS = JSON.parse(import.meta.env.VITE_APP_ORDERCLOUD_ALLOW_ANONYMOUS || "false");
+const ALLOW_ANONYMOUS = import.meta.env.VITE_APP_ORDERCLOUD_ALLOW_ANONYMOUS || false;
 
 console.log('consts', {
     CONFIG_BASE,
