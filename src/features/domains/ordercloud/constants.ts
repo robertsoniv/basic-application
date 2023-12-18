@@ -20,6 +20,8 @@ console.log('consts', {
     CLIENT_ID,
     SCOPE,
     CUSTOM_SCOPE,
+    ALLOW_ANONYMOUS_STRING,
+    'type': typeof ALLOW_ANONYMOUS_STRING,
     ALLOW_ANONYMOUS,
 }, )
 
