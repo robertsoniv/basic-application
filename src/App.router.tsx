@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       }
     ],
   },
-], {basename: import.meta.env.VITE_APP_CONFIG_BASE});
+], {basename: '/basic-application'});
 
 const AppRouter: FC = () => {
   return <RouterProvider router={router} />;
