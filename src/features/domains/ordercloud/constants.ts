@@ -12,20 +12,18 @@ const CUSTOM_SCOPE:string[] = CUSTOM_SCOPE_STRING?.split(',');
 //Anonymous auth configuration
 const ALLOW_ANONYMOUS = import.meta.env.VITE_APP_ORDERCLOUD_ALLOW_ANONYMOUS === "true";
 
-const result = {
+console.log('consts', {
     BASE_API_URL,
     CLIENT_ID,
     SCOPE,
     CUSTOM_SCOPE,
     ALLOW_ANONYMOUS,
-};
+})
 
-console.log('consts', result);
-
-export default {
+export {
     BASE_API_URL,
     CLIENT_ID,
     SCOPE,
     CUSTOM_SCOPE,
     ALLOW_ANONYMOUS,
-};
+}
