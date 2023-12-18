@@ -22,4 +22,10 @@ const result = {
 
 console.log('consts', result);
 
-export default result;
+export default {
+    BASE_API_URL,
+    CLIENT_ID,
+    SCOPE,
+    CUSTOM_SCOPE,
+    ALLOW_ANONYMOUS,
+};
