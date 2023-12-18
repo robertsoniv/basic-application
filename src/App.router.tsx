@@ -4,7 +4,7 @@ import App from "./App";
 import Profile from "./features/domains/ordercloud/components/Profile";
 import Orders from "./features/domains/ordercloud/components/Orders";
 
-const basename = process.env.VITE_APP_CONFIG_BASE;
+const basename = import.meta.env.VITE_APP_CONFIG_BASE;
 
 const router = createBrowserRouter([
   {
