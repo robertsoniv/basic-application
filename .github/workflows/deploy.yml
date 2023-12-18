@@ -22,12 +22,12 @@ jobs:
 
       - name: Build project
         run: npm run build
-        env:
-          VITE_APP_CONFIG_BASE: ${{ secrets.VITE_APP_CONFIG_BASE }}
-          VITE_APP_ORDERCLOUD_BASE_API_URL: ${{ secrets.VITE_APP_ORDERCLOUD_BASE_API_URL }}
-          VITE_APP_ORDERCLOUD_CLIENT_ID: ${{ secrets.VITE_APP_ORDERCLOUD_CLIENT_ID }}
-          VITE_APP_ORDERCLOUD_SCOPE: ${{ secrets.VITE_APP_ORDERCLOUD_SCOPE }}
-          VITE_APP_ORDERCLOUD_ALLOW_ANONYMOUS: ${{ secrets.VITE_APP_ALLOW_ANONYMOUS }}
+        # env:
+        #   VITE_APP_CONFIG_BASE: ${{ secrets.VITE_APP_CONFIG_BASE }}
+        #   VITE_APP_ORDERCLOUD_BASE_API_URL: ${{ secrets.VITE_APP_ORDERCLOUD_BASE_API_URL }}
+        #   VITE_APP_ORDERCLOUD_CLIENT_ID: ${{ secrets.VITE_APP_ORDERCLOUD_CLIENT_ID }}
+        #   VITE_APP_ORDERCLOUD_SCOPE: ${{ secrets.VITE_APP_ORDERCLOUD_SCOPE }}
+        #   VITE_APP_ORDERCLOUD_ALLOW_ANONYMOUS: ${{ secrets.VITE_APP_ALLOW_ANONYMOUS }}
 
 
       - name: Upload production-ready build files
