@@ -56,9 +56,9 @@ export function useAuthQuery<
   if (query.error) {
     if (typeof onError === "function") {
       onError(query.error as unknown as OrderCloudError);
+    } else {
+      defaultErrorHandler(query.error as unknown as OrderCloudError);
     }
-    //this should only ever be used with the OrderCloud JS SDK if used properly
-    defaultErrorHandler(query.error as unknown as OrderCloudError);
   }
 
   return query;
@@ -66,7 +66,7 @@ export function useAuthQuery<
 
 export function useAuthMutation<
   TData = unknown,
-  TError = unknown,
+  TError = OrderCloudError,
   TVariables = TData,
   TContext = unknown
 >(
